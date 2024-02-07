@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Textract Result</title>
+</head>
+<body>
+    <h1>Extracted Blocks</h1>
+    <div>
+        <h2>Blocks:</h2>
+        <ul>
+            {% for block in textract_result %}
+            <li>{{ block }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div>
+        <h2>Calculated Amount:</h2>
+        <p>{{ amount }}</p>
+    </div>
+</body>
+</html>
